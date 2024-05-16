@@ -11,25 +11,22 @@
 
   <title>Frontend Mentor | NFT preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
 
   <div class="nft-card">
-    <img class="nft-card-img" src="./images/image-equilibrium.jpg" alt="">
-    <h3>Equilibrium #3429</h3>
+    <div class="images">
 
+      <img class="nft-card-img" src="./images/image-equilibrium.jpg" alt="">
+      <div>
+        <img src="./images/icon-view.svg" alt="">
+      </div>
+
+    </div>
+
+
+    <h3 class="active">Equilibrium #3429</h3>
     <p class="nft-card-description"> Our Equilibrium collection promotes balance and calm.
 
     </p>
@@ -46,17 +43,19 @@
       </div>
     </div>
     <div class="blue-hr">
-      <hr >
+      <hr>
     </div>
 
 
     <div class="nft-card-footer">
       <img class="nft-card-footer-img" src="./images/image-avatar.png" alt="">
-      <p> 
+      <p>
         <span class="soft-blue"> Creation of</span>
-        Jules Wyvern</p>
-    
-     
+        <span class="active">Jules Wyvern
+      </p></span>
+
+
+
     </div>
 
 

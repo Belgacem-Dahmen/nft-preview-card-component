@@ -58,14 +58,43 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
 }
+
+.images{
+    position: relative
+}
+
+.images div {
+    position: absolute;
+    background-color: var(--primary-cyan);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.images div:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    border-radius:10px ;
+}
+.images div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 
 .nft-card-img {
     border-radius: 10px;
+    width: 100%;
 }
 
+
 .nft-card-description {
-    color: var(--primary-soft-blue);line-height: 1.5rem;
+    color: var(--primary-soft-blue);
+    line-height: 1.5rem;
 }
 
 .nft-card-pricing {
@@ -76,9 +105,13 @@ body {
 .nft-card-pricing-details {
     display: flex;
     align-items: center;
-    gap: 0.5rem; 
+    gap: 0.5rem;
 
 }
+
+
+
+
 
 
 
@@ -95,15 +128,21 @@ body {
 }
 
 .soft-blue {
-    color: var( --primary-soft-blue);
+    color: var(--primary-soft-blue);
 }
 
 .cyan {
-    color: var( --primary-cyan);
+    color: var(--primary-cyan);
 }
 
 .blue-hr {
-    color: var( --neutral-very-dark-blue-line);
+    color: var(--neutral-very-dark-blue-line);
+}
+
+.active:hover {
+    color: var(--primary-cyan);
+    cursor: pointer;
+
 }
 
 /* Pour les appareils mobiles */
@@ -113,11 +152,11 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
     }
+
     .nft-card {
         max-width: 320px;
     }
-   
-  }
-  
+
+}
