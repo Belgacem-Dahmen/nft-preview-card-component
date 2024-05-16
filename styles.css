@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+:root {
+    /* Layout */
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+
+    /* Couleurs */
+    /* Primary */
+    --primary-soft-blue: hsl(215, 51%, 70%);
+    --primary-cyan: hsl(178, 100%, 50%);
+
+    /* Neutral */
+    --neutral-very-dark-blue-main-bg: hsl(217, 54%, 11%);
+    --neutral-very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --neutral-very-dark-blue-line: hsl(215, 32%, 27%);
+    --neutral-white: hsl(0, 0%, 100%);
+
+    /* Typographie */
+    /* Body Copy */
+    --body-font-size: 18px;
+
+    /* Police */
+    --font-family: 'Outfit', sans-serif;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-bold: 600;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--body-font-size);
+    background-color: var(--neutral-very-dark-blue-main-bg);
+    display: flex;
+    color: var(--neutral-white);
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+}
+
+
+.nft-card {
+    background-color: var(--neutral-very-dark-blue-card-bg);
+    padding: 20px;
+    max-width: 340px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nft-card-img {
+    border-radius: 10px;
+}
+
+.nft-card-description {
+    color: var(--primary-soft-blue);line-height: 1.5rem;
+}
+
+.nft-card-pricing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nft-card-pricing-details {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+
+}
+
+
+
+.nft-card-footer {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nft-card-footer-img {
+    width: 38px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.soft-blue {
+    color: var( --primary-soft-blue);
+}
+
+.cyan {
+    color: var( --primary-cyan);
+}
+
+.blue-hr {
+    color: var( --neutral-very-dark-blue-line);
+}
+
+/* Pour les appareils mobiles */
+@media only screen and (max-width: 375px) {
+    body {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .nft-card {
+        max-width: 320px;
+    }
+   
+  }
+  
